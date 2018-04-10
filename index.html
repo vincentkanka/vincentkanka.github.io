@@ -1,29 +1,189 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Vincent Kanka
+<title>Vincent-Portfolio
 </title>
 <meta charset="utf-8"/>
+<meta name="keywords" content="vincentkanka, portfolio, HTML, CSS, JavaScript">
+<meta name="description" content="vincent portfolio">
+<meta name="author" content="Vincent Kanka">
+<meta http-equiv="refresh" content="300">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <link href="portfolio.css" type="text/css" rel="stylesheet">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Handlee|Cabin+Sketch|Bad+Script|Montserrat+Alternates|Aclonica|Kurale|Bungee+Inline|Courgette|Amaranth" 
+rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://code.jquery.com/jquery-1.6.4.min.js" type="text/javascript"></script>
+
 </head>
 <body>
-<div class="container">
-<div class="Navbar">
-<h2>Profile</h2>
-<ul>
-	<li>Home</li>
-	<li>Projects</li>
-	<li>Contact</li>
-</ul>
+<div class="Jumbotron">
+
+<header class="container">
+<div class="row">
+<div class="col-md-4">
+<h1>V</h1> 
 </div>
-<div class="main">
+
+<nav class="col-md-8 text-right">
+<a href="#top">Home</a>
+<a href="#About">About</a>
+<a href="#Projects">Projects</a>
+<a href="#Contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<main id="top">
+<div class="row text-center">
 <h1>Vincent Kanka</h1>
-<h3>Full-Stack Developer</h3>
-<p>Hey, I am a Full-Stack Developer looking for a Full-time position. Currently, I am learning many online courses on both front end and back end. Go through my profile so that you get a complete idea about me.</p>
-<img src="https://lh3.googleusercontent.com/-GKaGPaJ_yMc/VNUP4NfMhoI/AAAAAAAAACM/g6bmEtMc4p0/w530-h528-n-rw/10170930_480866035374449_431815647_n%2B%25281%2529.jpg" alt="Vincent">
+<div class="line"></div>
+<h3> < Software Developer > </h3>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-arrow-up" style="font-size:20px"></i></button>
+<script>
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+</div>
+</main>
+
+<section class="container" id="About">
+<div class="row">
+<h1 class="text-center">ABOUT ME</h1>
+</div>
+<div class="row" id="description">
+<div class="col-md-2" id="picture">
+<img src="./picture.jpg" alt="my image"></div>
+<div class="col-md-10" id="introduction">
+<p> Hey, How is it going? I am Vincent, a software developer living in New Jersey, USA. I enjoy building web applications and solving algorithm challenges. 
+Currently, I am taking a number of online courses to expand my knowledge on coding.  when I am not coding, I am usually reading a book, drinking coffee, or listening music.</p>
 </div>
 </div>
+
+<div class="row" id="education">
+<div class="col-md-4">
+<i class="fa fa-graduation-cap fa-2x" style="color:white"></i>
+<h2>Education:</h2>
+
+<p>Masters in Computer Science:<span style="color:#F2FF91">  Fairleigh Dickinson University</span></p>
+<p>Relevant Courses:<span style="color:#F2FF91"> Database Management, Operating Systems, 
+Java and Internet, Assembly Language, Computer Architecture, 
+Mobile Programming, System Programming, Software Engineering.</span></p> 
+<p>Bachelors in Electronics and Instrumentation Engineering:<span style="color:#F2FF91"> CVR College of Engineering</span></p>
+<img class="fdu" src="./fdu.png"></img>
+<img class="cvr" src="./Cvr.jpg"></img>
+</div>
+<div class="col-md-4" id="skills">
+<i class="fa fa-rocket fa-2x" style="color:white"></i>
+<h2>Skills:</h2>
+
+<p>Programming Languages:<span style="color:#F2FF91"> Java, C++, Python, HTML, CSS, PHP, JavaScript</span></p>
+<p>Databases:<span style="color:#F2FF91"> Oracle, MySQL, MongoDB</span></p>
+<p>Tools:<span style="color:#F2FF91"> NetBeans, Eclipse, Visual Studio, Android Studio</span></p>
+<p>Platforms:<span style="color:#F2FF91"> Windows, Linux.</span></p>
+<p>Cloud: <span style="color:#F2FF91"> OpenStack, AWS</span></p>
+<p>Related skills:<span style="color:#F2FF91"> Bootstrap, Responsive design, jQuery, Angular.js,
+Node.js, Express.js, JSON, Ajax, REST services, Git, Jira, Object-Oriented design, 
+Agile Software Development</span></p>
+
+</div>
+</div>
+
+<div class="text-center">
+<a href="Resume_Vincent.pdf" target="_blank"><p id="resume" class="btn" style="text-decoration: none">View Resume</p></a>
+<script>
+$("#resume").load("Vincent Kanka.html");
+</script>
+</div>
+
+</section>
+
+<section class="container" id="Projects">
+<div class="row">
+<h1>PROJECTS</h1>
+</div>
+
+<div class="row" id="projects12">
+<div class="col-md-4" id="project1">
+<h3>Vector Interpolation on Baxter Robot</h3>
+<p>A Python Class is designed to position the Baxter Robot ARM in accordance with an algorithm.
+Minimized the distance travelled in the X-Y plane using the K-nearest Neighbors. 
+Created to position the ARM with a driver to read points from a file and input them 
+into the Object created from the Class.
+</p>
+</div>
+<div class="col-md-4" id="project2">
+<h3>Bowling Score Counting Script</h3>
+<p>A Script has been written using shell programming to count the scores of 
+the bowlers in accordance with the actual procedure of counting the score. Grep, egrep, sed and awk, 
+have been used for scripting the code in a different file and executing it for the display of the scores.
+</p>
+</div>
+</div>
+
+<div class="row" id="projects34">
+<div class="col-md-4" id="project3">
+<h3>Tank Shooting Game</h3>
+<p>The Tank game was designed on Visual Studio using C++. D3DX libraries were included in this design.
+Tank will be able to shoot all the bombs displayed and the effects like explosion and sound were added 
+whenever a bomb is exploded. Used various functions, classes, strings, structures and operator overloading.
+</p>
+</div>
+<div class="col-md-4" id="project4">
+<h3>Automated Course feedback software</h3>
+<p>Collaborated in a team of two to design and develop an automated GUI based application for Teacher-Course 
+feedback using HTML, CSS, PHP and MySQL which is being used by the institute’s Student portal.
+</p>
+</div>
+</div>
+</section>
+
+<section class="container" id="Contact">
+<h1>CONTACT</h1>
+<form action="https://formspree.io/kankavincent@gmail.com" method="post">
+<h3 style="color:#82FFAB">Name<span style="color:#FF5050">*</span></h3>
+<input id="name" type="text" placeholder="Name" required>
+<h3 style="color:#82FFAB">Email<span style="color:#FF5050">*</span></h3>
+<input id="email" type="text" placeholder="Email" required>
+<h3 style="color:#82FFAB">Message<span style="color:#FF5050">*</span></h3>
+<textarea id="message" type="text" required></textarea>
+<br>
+<br>
+<label><button id="submit" type="submit" class="btn">Submit</button></label>
+</form>
+</section>
+
+<footer class="container" id="footer">
+<div class="row">
+<div class="col-md-4">
+<p>Vincent &copy; 2017. All Rights Reserved</p>
+</div>
+<nav class="col-md-8">
+<div id="facebook"><a href="https://www.facebook.com/vincentkanka" target="_blank"><i class="fa fa-facebook-f"></i></a></div>
+<div id="linkedin"><a href="https://www.linkedin.com/in/vincentkanka" target="_blank"><i class="fa fa-linkedin"></i></a></div>
+<div id="twitter"><a href="https://twitter.com/KankaVincent" target="_blank"><i class="fa fa-twitter"></i></a></div>
+</nav>
+</div>
+</footer>
+
+</div>
+
 </body>
 
 </html>
